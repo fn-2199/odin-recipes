@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+body {
+    background-image: url('./img/background.jpg');
+    background-repeat: no-repeat; /* Avoid image from repeating */
+    background-position: center;
+    background-attachment: fixed; /* Entire element will always be covered */
+    background-size: cover; /* Covers the entire element */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Sets height so cross axis alignment align-items can work */
+}
+
+body,
+h1,
+ul,
+a {
+    /* Removes pre-defined margin and padding */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+h1 {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 80px;
+    text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 15px 25px;
+    color: inherit;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 40px;
+    
+}
+
+.sisig {
+    background-color: #320140;
+}
+
+.bistek {
+    background-color: #85A60F;
+}
+
+.sinigang {
+    background-color: #F2A30F;
+}
+
+.sisig:hover,
+.bistek:hover,
+.sinigang:hover {
+    background-color: white;
+    color: black;
+}
